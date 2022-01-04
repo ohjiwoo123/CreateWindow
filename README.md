@@ -167,20 +167,21 @@ int main()
 - (장점) 전역변수의 단점을 잘 커버해준다. 프로그래밍을 잘하는 사람은 맴버 변수를 잘 활용한다고 함.  
 - (단점) 딱히 없는 거 같다.  
 ```
-class CCreateWindowView : public CView
+class CMouseDemoView : public CView
 {
 protected: // serialization에서만 만들어집니다.
-	CCreateWindowView() noexcept;
-	DECLARE_DYNCREATE(CCreateWindowView)
+	CMouseDemoView() noexcept;
+	DECLARE_DYNCREATE(CMouseDemoView)
 
 // 특성입니다.
 public:
-	CCreateWindowDoc* GetDocument() const;
+	CMouseDemoDoc* GetDocument() const;
 
 // 작업입니다.
 public:
-	int x, y, w, h, color;
-	CWnd m_wndChild;
+	int m_x;
+	int m_y;
+	BOOL m_DRAGFLAG;
 }
 ```
 MFC에서는 위와 같이 헤더파일에서 class 내에서 private, public 등 활용하여 맴버변수를 선언한다.  
