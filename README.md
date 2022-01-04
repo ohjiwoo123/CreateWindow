@@ -114,7 +114,8 @@ m_wndChild.GetWindowRect(&rectChild);
 ScreenToClient(&rectChild);
 ```
 ## Chapter 7 - Mouse & Message  
-다른 repo에 있는 CMouseDemoView.cpp 코드 참고 @@ 
+다른 repo에 있는 https://github.com/ohjiwoo123/MouseDemo/blob/master/MouseDemo/MouseDemoView.cpp  
+CMouseDemoView.cpp 코드 참고 @@ 
 
 ---
 ## Special Chapter - 전역변수,지역변수,정적변수(Static),맴버변수  
